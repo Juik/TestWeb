@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<context-param>
+		<param-name>globalEncoding_SRC</param-name>
+		<param-value>ISO-8859-1</param-value>
+	</context-param>
+	<context-param>
+		<param-name>globalEncoding_DEST</param-name>
+		<param-value>UTF-8</param-value>
+	</context-param>
+	<context-param>
+		<param-name>globalEncodingName</param-name>
+		<param-value>UTF-8</param-value>
+	</context-param>
+	<servlet>
+		<servlet-name>TestServletName</servlet-name>
+		<servlet-class>com.pb.servlet.TestServlet</servlet-class>
+		<init-param>
+			<param-name>encodingName</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TestServletName</servlet-name>
+		<url-pattern>/ts</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>InitServletName</servlet-name>
+		<servlet-class>com.pb.servlet.InitServlet</servlet-class>
+		<init-param>
+			<param-name>encodingName</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>IPAddressServlet</servlet-name>
+		<servlet-class>com.pb.servlet.IPAddressServlet</servlet-class>
+		<init-param>
+			<param-name>ipRange</param-name>
+			<param-value>192.168.0.1-192.168.0.50</param-value>
+		</init-param>
+		
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IPAddressServlet</servlet-name>
+		<url-pattern>/IPAddressServlet</url-pattern>
+	</servlet-mapping>
+  <servlet>
+    <servlet-name>UserLoginServlet</servlet-name>
+    <servlet-class>com.pb.servlet.UserLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserRegisterServlet</servlet-name>
+    <servlet-class>com.pb.servlet.UserRegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>WenHaoServlet</servlet-name>
+    <servlet-class>com.pb.servlet.WenHaoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserShowAllServlet</servlet-name>
+    <servlet-class>com.pb.servlet.UserShowAllServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserDeleteServlet</servlet-name>
+    <servlet-class>com.pb.servlet.UserDeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserFindUserById</servlet-name>
+    <servlet-class>com.pb.servlet.UserFindUserById</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserUpdateServlet</servlet-name>
+    <servlet-class>com.pb.servlet.UserUpdateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserShowAllByPageServlet</servlet-name>
+    <servlet-class>com.pb.servlet.UserShowAllByPageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserShowAllByMohuServlet</servlet-name>
+    <servlet-class>com.pb.servlet.UserShowAllByMohuServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserShowAllByPageAndMohuServlet</servlet-name>
+    <servlet-class>com.pb.servlet.UserShowAllByPageAndMohuServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BillShowAllByPageAndMohuServlet</servlet-name>
+    <servlet-class>com.pb.servlet.BillShowAllByPageAndMohuServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SupplierShowAllByPageAndMohuServlet</servlet-name>
+    <servlet-class>com.pb.servlet.SupplierShowAllByPageAndMohuServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BillDeleteServlet</servlet-name>
+    <servlet-class>com.pb.servlet.BillDeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SupplierDeleteServlet</servlet-name>
+    <servlet-class>com.pb.servlet.SupplierDeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BillFindBillById</servlet-name>
+    <servlet-class>com.pb.servlet.BillFindBillById</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BillUpdateServlet</servlet-name>
+    <servlet-class>com.pb.servlet.BillUpdateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SupplierFindSupplierById</servlet-name>
+    <servlet-class>com.pb.servlet.SupplierFindSupplierById</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SupplierUpdateServlet</servlet-name>
+    <servlet-class>com.pb.servlet.SupplierUpdateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserAddServlet</servlet-name>
+    <servlet-class>com.pb.servlet.UserAddServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SupplierAddServlet</servlet-name>
+    <servlet-class>com.pb.servlet.SupplierAddServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BillAddServlet</servlet-name>
+    <servlet-class>com.pb.servlet.BillAddServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UploadFileServlet</servlet-name>
+    <servlet-class>com.pb.servlet.UploadFileServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DownloadFileServlet</servlet-name>
+    <servlet-class>com.pb.servlet.DownloadFileServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+  <servlet-mapping>
+    <servlet-name>UserLoginServlet</servlet-name>
+    <url-pattern>/UserLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserRegisterServlet</servlet-name>
+    <url-pattern>/UserRegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WenHaoServlet</servlet-name>
+    <url-pattern>/WenHaoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserShowAllServlet</servlet-name>
+    <url-pattern>/UserShowAllServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserDeleteServlet</servlet-name>
+    <url-pattern>/UserDeleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserFindUserById</servlet-name>
+    <url-pattern>/UserFindUserById</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserUpdateServlet</servlet-name>
+    <url-pattern>/UserUpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserShowAllByPageServlet</servlet-name>
+    <url-pattern>/UserShowAllByPageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserShowAllByMohuServlet</servlet-name>
+    <url-pattern>/UserShowAllByMohuServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserShowAllByPageAndMohuServlet</servlet-name>
+    <url-pattern>/UserShowAllByPageAndMohuServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BillShowAllByPageAndMohuServlet</servlet-name>
+    <url-pattern>/BillShowAllByPageAndMohuServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SupplierShowAllByPageAndMohuServlet</servlet-name>
+    <url-pattern>/SupplierShowAllByPageAndMohuServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BillDeleteServlet</servlet-name>
+    <url-pattern>/BillDeleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SupplierDeleteServlet</servlet-name>
+    <url-pattern>/SupplierDeleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BillFindBillById</servlet-name>
+    <url-pattern>/BillFindBillById</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BillUpdateServlet</servlet-name>
+    <url-pattern>/BillUpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SupplierFindSupplierById</servlet-name>
+    <url-pattern>/SupplierFindSupplierById</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SupplierUpdateServlet</servlet-name>
+    <url-pattern>/SupplierUpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserAddServlet</servlet-name>
+    <url-pattern>/UserAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SupplierAddServlet</servlet-name>
+    <url-pattern>/SupplierAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BillAddServlet</servlet-name>
+    <url-pattern>/BillAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadFileServlet</servlet-name>
+    <url-pattern>/UploadFileServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DownloadFileServlet</servlet-name>
+    <url-pattern>/DownloadFileServlet</url-pattern>
+  </servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
